@@ -10,9 +10,18 @@ The following Istio component images are configurable:
 
 | Component       | Environment Variable | IstioOperator Path          |
 |-----------------|----------------------|-----------------------------|
-| Pilot           | `PILOT_IMAGE`        | `values.pilot.image`        |
-| Proxy (sidecar) | `PROXY_V2_IMAGE`     | `values.global.proxy.image` |
-| CNI             | `INSTALL_CNI_IMAGE`  | `values.cni.image`          |
+| Pilot           | `pilot`              | `values.pilot.image`        |
+| Proxy (sidecar) | `proxyv2`            | `values.global.proxy.image` |
+| CNI             | `install-cni`        | `values.cni.image`          |
+
+The following Istio component images are configurable for FIPS-compliant configurations:
+
+| Component       | Environment Variable | IstioOperator Path          |
+|-----------------|----------------------|-----------------------------|
+| Pilot           | `pilot-fips`         | `values.pilot.image`        |
+| Proxy (sidecar) | `proxyv2-fips`       | `values.global.proxy.image` |
+| CNI             | `install-cni-fips`   | `values.cni.image`          |
+ 
 
 ## Image Format
 
